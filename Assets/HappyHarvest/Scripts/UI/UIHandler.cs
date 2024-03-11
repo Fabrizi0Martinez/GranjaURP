@@ -44,7 +44,9 @@ namespace HappyHarvest
         protected VisualElement m_MarketContentScrollview;
 
         protected Label m_TimerLabel;
-
+        //////////////////////
+        private Button cycleStarter;
+        //////////////////////
         protected Button m_BuyButton;
         protected Button m_SellButton;
 
@@ -121,11 +123,22 @@ namespace HappyHarvest
             m_SunLabel.AddManipulator(new Clickable(() => { GameManager.Instance.WeatherSystem?.ChangeWeather(WeatherSystem.WeatherType.Sun); }));
             m_RainLabel.AddManipulator(new Clickable(() => { GameManager.Instance.WeatherSystem?.ChangeWeather(WeatherSystem.WeatherType.Rain); }));
             m_ThunderLabel.AddManipulator(new Clickable(() => { GameManager.Instance.WeatherSystem?.ChangeWeather(WeatherSystem.WeatherType.Thunder); }));
+
+            //Function to start time from GameManager when clicking on the button labeld "Cycle"
+
+            cycleStarter = m_Document.rootVisualElement.Q<Button>("StartCycle");
+
+            cycleStarter.clicked += () =>
+            {
+                GameManager.Instance.StartCycle();
+            };
+            
         }
         
         
         void Update()
         {
+   
             m_TimerLabel.text = GameManager.Instance.CurrentTimeAsString();
         }
 
