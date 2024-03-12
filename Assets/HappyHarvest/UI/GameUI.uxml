@@ -1,62 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <ui:Template name="SettingsMenu" src="project://database/Assets/HappyHarvest/Common/UI/SettingMenu/SettingsMenu.uxml?fileID=9197481963319205126&amp;guid=f56a0812d09cf4b4cb75e25f035636c1&amp;type=3#SettingsMenu" />
     <Style src="project://database/Assets/HappyHarvest/UI/GameUI.uss?fileID=7433441132597879392&amp;guid=59b1a0b3477344945ae509fbe8d014a6&amp;type=3#GameUI" />
-    <ui:VisualElement name="Inventory" style="background-color: rgba(0, 0, 0, 0); height: 100px; position: absolute; bottom: 3px; width: 100%; flex-direction: row; align-items: center; justify-content: center; left: -5px;">
-        <ui:VisualElement name="InventoryEntry" style="flex-grow: 0; width: 80px; height: 80px; flex-direction: row;">
-            <ui:VisualElement name="Item" style="flex-grow: 1;" />
-            <ui:Label tabindex="-1" text="Q" display-tooltip-when-elided="true" name="Previous" style="position: absolute; left: -20px; top: -20px; background-color: rgba(255, 255, 255, 0); width: 30px; height: 30px; -unity-text-align: middle-center; font-size: 20px;" />
-            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="ItemCount" style="position: absolute; right: -5px; bottom: -5px; background-color: rgb(255, 255, 255); width: 25px; height: 25px; -unity-text-align: middle-center;" />
-        </ui:VisualElement>
-        <ui:VisualElement name="InventoryEntry" style="flex-grow: 0; width: 80px; height: 80px; flex-direction: row;">
-            <ui:VisualElement name="Item" style="flex-grow: 1;" />
-            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="ItemCount" style="position: absolute; right: -5px; bottom: -5px; background-color: rgb(255, 255, 255); width: 25px; height: 25px; -unity-text-align: middle-center; background-image: none;" />
-        </ui:VisualElement>
-        <ui:VisualElement name="InventoryEntry" style="flex-grow: 0; width: 80px; height: 80px; flex-direction: row;">
-            <ui:VisualElement name="Item" style="flex-grow: 1;" />
-            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="ItemCount" style="position: absolute; right: -5px; bottom: -5px; background-color: rgb(255, 255, 255); width: 25px; height: 25px; -unity-text-align: middle-center; background-image: none;" />
-        </ui:VisualElement>
-        <ui:VisualElement name="InventoryEntry" style="flex-grow: 0; width: 80px; height: 80px; flex-direction: row;">
-            <ui:VisualElement name="Item" style="flex-grow: 1;" />
-            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="ItemCount" style="position: absolute; right: -5px; bottom: -5px; background-color: rgb(255, 255, 255); width: 25px; height: 25px; -unity-text-align: middle-center; background-image: none;" />
-        </ui:VisualElement>
-        <ui:VisualElement name="InventoryEntry" style="flex-grow: 0; width: 80px; height: 80px; flex-direction: row;">
-            <ui:VisualElement name="Item" style="flex-grow: 1;" />
-            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="ItemCount" style="position: absolute; right: -5px; bottom: -5px; background-color: rgb(255, 255, 255); width: 25px; height: 25px; -unity-text-align: middle-center; background-image: none;" />
-        </ui:VisualElement>
-        <ui:VisualElement name="InventoryEntry" style="flex-grow: 0; width: 80px; height: 80px; flex-direction: row;">
-            <ui:VisualElement name="Item" style="flex-grow: 1;" />
-            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="ItemCount" style="position: absolute; right: -5px; bottom: -5px; background-color: rgb(255, 255, 255); width: 25px; height: 25px; -unity-text-align: middle-center; background-image: none;" />
-        </ui:VisualElement>
-        <ui:VisualElement name="InventoryEntry" style="flex-grow: 0; width: 80px; height: 80px; flex-direction: row;">
-            <ui:VisualElement name="Item" style="flex-grow: 1;" />
-            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="ItemCount" style="position: absolute; right: -5px; bottom: -5px; background-color: rgb(255, 255, 255); width: 25px; height: 25px; -unity-text-align: middle-center; background-image: none;" />
-        </ui:VisualElement>
-        <ui:VisualElement name="InventoryEntry" style="flex-grow: 0; width: 80px; height: 80px; flex-direction: row;">
-            <ui:VisualElement name="Item" style="flex-grow: 1;" />
-            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="ItemCount" style="position: absolute; right: -5px; bottom: -5px; background-color: rgb(255, 255, 255); width: 25px; height: 25px; -unity-text-align: middle-center; background-image: none;" />
-        </ui:VisualElement>
-        <ui:VisualElement name="InventoryEntry" style="flex-grow: 0; width: 80px; height: 80px; flex-direction: row;">
-            <ui:VisualElement name="Item" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
-            <ui:Label tabindex="-1" text="E" display-tooltip-when-elided="true" name="Previous" style="position: absolute; top: -20px; background-color: rgba(255, 255, 255, 0); width: 30px; height: 30px; -unity-text-align: middle-center; font-size: 20px; right: -20px;" />
-            <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="ItemCount" style="position: absolute; right: -5px; bottom: -5px; background-color: rgb(255, 255, 255); width: 25px; height: 25px; -unity-text-align: middle-center;" />
-        </ui:VisualElement>
-    </ui:VisualElement>
-    <ui:VisualElement name="MoneyCounter" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; left: 37px; top: 18px; width: 245px; height: 95px; padding-left: 30px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; -unity-font: url(&quot;project://database/Assets/HappyHarvest/Fonts/CurseCasual/Curse%20Casual.ttf?fileID=12800000&amp;guid=31797353ab4fc7043a0f62eacf5ea3a9&amp;type=3#Curse Casual&quot;); -unity-font-definition: none; flex-direction: column;">
-        <ui:VisualElement name="Background" style="flex-grow: 3; background-color: rgba(0, 0, 0, 0.41); align-self: flex-end; width: 100%; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; -unity-font: url(&quot;project://database/Assets/HappyHarvest/Fonts/CurseCasual/Curse%20Casual.ttf?fileID=12800000&amp;guid=31797353ab4fc7043a0f62eacf5ea3a9&amp;type=3#Curse Casual&quot;); flex-direction: column; height: 64px;">
-            <ui:Label tabindex="-1" text="9999" display-tooltip-when-elided="true" name="CoinAmount" style="margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 10px; padding-top: 0; padding-bottom: 0; width: 134px; height: 100%; -unity-text-align: middle-center; color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 48px; -unity-font: url(&quot;project://database/Assets/HappyHarvest/Fonts/CurseCasual/Curse%20Casual.ttf?fileID=12800000&amp;guid=31797353ab4fc7043a0f62eacf5ea3a9&amp;type=3#Curse Casual&quot;); align-items: flex-start; text-overflow: ellipsis; flex-direction: row; flex-basis: 100%; flex-grow: 0; flex-shrink: 1; transform-origin: center; translate: 75px 0;" />
-        </ui:VisualElement>
-        <ui:VisualElement name="Icone" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; left: -35px; top: -7px; height: 86%; background-image: url(&quot;project://database/Assets/HappyHarvest/Art/UI/Sprite_coin_icon.png?fileID=21300000&amp;guid=e62e85a2605f5044aa05771c6aa3a53b&amp;type=3#Sprite_coin_icon&quot;); width: 150px; align-items: flex-start; align-self: flex-start; transform-origin: center; -unity-background-scale-mode: scale-to-fit;" />
-    </ui:VisualElement>
     <ui:VisualElement name="TimerContainer" class="top-block" style="flex-grow: 1; background-color: rgba(0, 127, 226, 0); position: absolute; width: 541px; top: 20px; left: 334px; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; -unity-font: url(&quot;project://database/Assets/HappyHarvest/Fonts/CurseCasual/Curse%20Casual.ttf?fileID=12800000&amp;guid=31797353ab4fc7043a0f62eacf5ea3a9&amp;type=3#Curse Casual&quot;); height: 88px;">
         <ui:VisualElement name="Background" class="background-block" style="align-self: center; justify-content: center; align-items: center; background-color: rgba(0, 0, 0, 0.41);">
             <ui:Label tabindex="-1" text="12:00" display-tooltip-when-elided="true" name="Timer" style="width: 100%; height: 100%; -unity-text-align: middle-center; color: rgb(255, 255, 255); -unity-font-style: bold; font-size: 48px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-font-definition: none; text-shadow: 0 20px 10px rgba(0, 0, 0, 0); align-items: center;" />
         </ui:VisualElement>
         <ui:VisualElement name="Icone" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; left: -70px; top: -7px; height: 86%; background-image: url(&quot;project://database/Assets/HappyHarvest/Art/UI/Sprite_clock_icon.png?fileID=21300000&amp;guid=dfe68871e6ec04238b78d286ed7be87b&amp;type=3#Sprite_clock_icon&quot;); width: 150px; align-items: flex-start; align-self: flex-start; transform-origin: center; -unity-background-scale-mode: scale-to-fit;" />
-        <ui:VisualElement name="WeatherBlock" class="background-block" style="background-color: rgba(0, 0, 0, 0.41);">
-            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="SunLabel" text="☀" style="-unity-text-align: middle-center; -unity-font: url(&quot;project://database/Assets/HappyHarvest/Fonts/NotoSansSymbols2/NotoSansSymbols2-Regular.ttf?fileID=12800000&amp;guid=6e05353bcf099184abee5104e4b9228a&amp;type=3#NotoSansSymbols2-Regular&quot;);" />
-            <ui:Label tabindex="-1" display-tooltip-when-elided="true" name="RainLabel" text="⛆" style="-unity-text-align: middle-center; -unity-font: url(&quot;project://database/Assets/HappyHarvest/Fonts/NotoSansSymbols2/NotoSansSymbols2-Regular.ttf?fileID=12800000&amp;guid=6e05353bcf099184abee5104e4b9228a&amp;type=3#NotoSansSymbols2-Regular&quot;);" />
-            <ui:Label tabindex="-1" text="\u26C8" display-tooltip-when-elided="true" name="ThunderLabel" style="-unity-text-align: middle-center;" />
-        </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="MarketPopup" class="game-popup" style="visibility: hidden;">
         <ui:VisualElement name="PopupBackground" style="flex-grow: 0; background-color: rgb(0, 127, 226); width: 500px; height: 80%; border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px;">
@@ -69,9 +18,7 @@
             <ui:Button text="X" display-tooltip-when-elided="true" name="CloseButton" style="position: absolute; width: 30px; height: 30px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; right: 5px; top: 5px;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:Button text="Cycle" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StartCycle" style="visibility: visible; overflow: hidden; height: -5px; width: 121px; justify-content: flex-start; position: absolute; top: 65%; left: 85%; border-left-color: rgb(56, 56, 56); border-right-color: rgb(56, 56, 56); border-top-color: rgb(56, 56, 56); border-bottom-color: rgb(56, 56, 56); background-color: rgb(64, 191, 255);">
-        <ui:VisualElement name="Blocker" picking-mode="Ignore" style="flex-grow: 1; background-color: rgb(0, 0, 0); opacity: 0; -unity-text-outline-color: rgb(0, 46, 255); position: absolute;" />
-    </ui:Button>
+    <ui:Button text="Ciclar&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="StartCycle" style="visibility: visible; overflow: hidden; height: 103px; width: 224px; justify-content: flex-start; position: absolute; top: 490px; left: 88%; border-left-color: rgb(56, 56, 56); border-right-color: rgb(56, 56, 56); border-top-color: rgb(56, 56, 56); border-bottom-color: rgb(56, 56, 56); background-color: rgba(202, 202, 201, 0); background-image: url(&quot;project://database/Assets/HappyHarvest/Art/UI/Sprite_Button_green.png?fileID=2800000&amp;guid=9a4116da924db7c449f25e2a457972bc&amp;type=3#Sprite_Button_green&quot;); font-size: 69px; padding-top: 67px; color: rgb(245, 255, 220); text-shadow: 0 18px 1px rgba(0, 0, 0, 0.35); right: -72px; bottom: 92px; -unity-background-scale-mode: scale-to-fit;" />
     <ui:VisualElement name="WarehousePopup" class="game-popup" style="visibility: hidden;">
         <ui:VisualElement name="PopupBackground" style="flex-grow: 0; background-color: rgb(0, 127, 226); width: 500px; height: 80%; border-top-left-radius: 30px; border-bottom-left-radius: 30px; border-top-right-radius: 30px; border-bottom-right-radius: 30px;">
             <ui:Label tabindex="-1" text="Warehouse" display-tooltip-when-elided="true" name="WarehouseTitle" style="-unity-text-align: middle-center; font-size: 32px; color: rgb(255, 255, 255);" />
@@ -83,5 +30,12 @@
             <ui:Button text="X" display-tooltip-when-elided="true" name="CloseButton" style="position: absolute; width: 30px; height: 30px; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; right: 5px; top: 5px;" />
         </ui:VisualElement>
     </ui:VisualElement>
-    <ui:Instance template="SettingsMenu" name="SettingsMenu" picking-mode="Ignore" style="width: 100%; height: 100%; position: absolute; opacity: 1; top: 0; left: -1px;" />
+    <ui:Instance template="SettingsMenu" name="SettingsMenu" picking-mode="Ignore" style="position: absolute; top: 20px; left: 1668px; height: 151px; width: 252px;" />
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="inventario" style="position: absolute; left: 1189px; top: 890px; right: 453px; bottom: 44px; background-color: rgba(133, 199, 131, 0.76); background-image: url(&quot;project://database/Assets/Iconos/12.png?fileID=2800000&amp;guid=b14d66dc3824d4e38a2b4751a271da8d&amp;type=3#12&quot;);" />
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="inventario" style="position: absolute; top: 891px; right: 747px; bottom: 43px; background-color: rgba(133, 199, 131, 0.76); background-image: url(&quot;project://database/Assets/Iconos/10.png?fileID=2800000&amp;guid=06a2bdf2b81f34da693485128d8b81f6&amp;type=3#10&quot;); width: 270px;" />
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="inventario" style="position: absolute; left: 594px; top: 882px; right: 1043px; bottom: 35px; background-color: rgba(133, 199, 131, 0.76); background-image: url(&quot;project://database/Assets/Iconos/13.png?fileID=2800000&amp;guid=9a240e5e74a2c4e519fdf615d48713f9&amp;type=3#13&quot;);" />
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="inventario" style="position: absolute; left: 1495px; top: 886px; right: 184px; bottom: 46px; background-color: rgba(133, 199, 131, 0.76); background-image: url(&quot;project://database/Assets/Iconos/14.png?fileID=2800000&amp;guid=59792b23f6a8d4e669da23cdd37d4a4e&amp;type=3#14&quot;);" />
+    <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="inventario" style="position: absolute; left: 254px; top: 891px; right: 1359px; bottom: 35px; background-color: rgba(133, 199, 131, 0.76); background-image: url(&quot;project://database/Assets/Iconos/11.png?fileID=2800000&amp;guid=cebb4f6e9795d464eb312f99c33a146c&amp;type=3#11&quot;);" />
+    <ui:ProgressBar value="22" title="my-progress" low-value="29.48" high-value="107" name="Deuda" style="height: 49px; width: 265px; position: absolute; top: 232px; left: 112px; right: 1535px; bottom: 796px; max-height: 44px; -unity-background-scale-mode: stretch-to-fill; padding-top: 11px; border-top-width: -1px;" />
+    <ui:ProgressBar value="22" title="my-progress" low-value="29.48" high-value="107" name="Saldo" style="height: 49px; width: 265px; position: absolute; top: 144px; left: 116px; right: 1532px; bottom: 884px; max-height: 44px; -unity-background-scale-mode: stretch-to-fill; padding-top: 11px; border-top-width: -1px;" />
 </ui:UXML>
