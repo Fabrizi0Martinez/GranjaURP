@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -82,7 +81,7 @@ namespace HappyHarvest
             s_Instance = this;
             DontDestroyOnLoad(gameObject);
             
-            m_IsTicking = false; /////////////////
+            m_IsTicking = true;
             
             ItemDatabase.Init();
             CropDatabase.Init();
@@ -147,22 +146,6 @@ namespace HappyHarvest
             }
         }
 
-        public void StartCycle()
-        {
-            m_IsTicking = true;
-
-            Task.Delay(4000).ContinueWith(task =>
-            {
-                m_IsTicking = false;
-            });
-
-            
-        }
-
-        public bool IsCycling(){
-            return m_IsTicking;
-        }
-
         public void Pause()
         {
             m_IsTicking = false;
@@ -171,6 +154,7 @@ namespace HappyHarvest
 
         public void Resume()
         {
+            m_IsTicking = true;
             Player.ToggleControl(true);
         }
 
